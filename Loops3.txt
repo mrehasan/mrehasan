@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels</title>
+</head>
+<body>
+    <script>
+        function vowels(a) {
+
+            var result;
+
+            result = a == "A" || a == "E" || a == "I" || a == "O" || a == "U" || a == "a" || a == "e" || a == "i" || a == "o" || a == "u";
+            return result;
+        }
+
+        var input;
+
+        do {
+            input = prompt("Put your Alphabets.");
+            if (input.length == 1) {
+                alert(vowels(input));
+            }
+        } while (input.length != 1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    <script>
+        const number = parseInt(prompt("put positive number "));
+        let a = true;
+
+
+        if (number === 1) {
+            document.write("1 is not prime number");
+        } else if (number > 1) {
+
+
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    a = false;
+                    break;
+                }
+            }
+
+            if (a) {
+                document.write(`${number}  prime number`);
+            } else {
+                document.write(`${number}  not prime number`);
+            }
+        } else {
+            document.write("The number is not a prime number.");
+        }
+    </script>
+</body>
+
+</html>

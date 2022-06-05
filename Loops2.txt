@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pettren</title>
+</head>
+<body>
+    <script>
+        var z = '';
+        var x = 20;
+        var y = (x - 1);
+        for (i = 1; i <= x; i++) {
+            z = z.trim();
+            z = ' '.repeat(y) + z + (i > 1 ? ' ' : '') + '*';y--;
+               document.write(z + "<br>");
+               console.log(z)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding even and odd number </title>
+</head>
+<body>
+    <h1>These are all Even/Odd Numbers</h1>
+    <script>
+        document.write("<h1>This is even Numbers<h1>")
+
+            //finding even numbers
+        for (var i = 1; i <= 75;i++){
+            if (i % 2== 0){
+                document.write(i +"<br>" )
+                console.log(i);
+            }
+        }
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<h1>This is Odd Numbers<h1>")
+
+            //finding odd numbers
+        for (var i = 1; i  <= 80; i++) {
+            if (i % 2 != 0) {
+                document.write(i +"<br>");
+                console.log(i);
+            }
+        }
+
+        //using parseint for finding even or odd number
+        var z = parseInt(prompt("Put any number"));
+        if(z % 2 != 0)
+            document.write("Your number is odd");
+            else
+                document.write("your number is even");
+
+    </script>
+</body>
+</html>
